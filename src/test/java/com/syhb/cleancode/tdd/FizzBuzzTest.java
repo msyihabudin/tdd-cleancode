@@ -25,4 +25,16 @@ public class FizzBuzzTest {
         assertEquals("Buzz", result);
     }
 
+    @Test
+    public void calculateFizzBuzz_FizzBuzzNumber() {
+        String result = sut.calculateFizzNumber(15);
+        assertEquals("FizzBuzz", result);
+    }
+
+    @Test
+    public void calculateFizzBuzz_NonFizzBuzzNumber() {
+        String result = sut.calculateFizzNumber(2);
+        assertEquals("2", result);
+    }
+
 }
